@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>La Objeteca</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- FUENTES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Yanone+Kaffeesatz:wght@200;300&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+      <header>
+        <nav>
+          <div id="header-logo">
+            <a href="index.html"><img src="images/_logoajust.svg" id="header-logo-svg" alt="Logotipo de La Objeteca"> La Objeteca</a>
+          </div>
+          <button class="hamburguesa">
+            <img src="images/ico-menu.svg" id="header-boton-hamburguesa-svg" alt="Menú de hamburguesa">
+          </button>
+          <div class="menu">
+          <ul>
+            <li><a href="catalogo.html" class="objeto-menu" id="h-catalogo">Catálogo</a></li>
+            <li><a href="#" class="objeto-menu" id="h-acerca">Acerca de nosotros</a></li>
+            <li><a href="eco-circular.html" class="objeto-menu" id="h-ecoc">Economía circular</a></li>
+            <li><a href="#" class="objeto-menu" id="h-contacta">Contacta</a></li>
+            <li>
+              <button id="header-boton-socios">
+                <img src="images/ico-user.svg" id="header-boton-socios-svg" alt="Botón para acceder al área de socios">
+              </button>
+            </li>
+          </ul>
+          </div>
+        </nav>
+      </header>
+
+        <main id="main-ficha">
+          <div id="encabezado-ficha">
+            <ul>
+              <li><form action ="#" method="post" id="form-buscador"><fieldset>
+                <input type="text" class="campo-escritura" id="form-buscador-barra" name="buscador" placeholder="Buscar...">
+                <img src="images/ico-filtros.svg" id="form-boton-filtros" alt="Icono de filtros">
+                <img src="images/ico-buscar.svg" id="form-boton-buscar" alt="Icono de buscar">
+              </fieldset></form></li>
+              <li><img src="images/ico-carr.svg" id="ficha-boton-carrito" alt="Icono para acceder al carrito"></li>
+            </ul>
+            <a href="catalogo.html"><img src="images/ico-flecha.svg" id="boton-flecha" alt="Flecha para regresar al catálogo"></a>
+          </div>
+
+          <article>
+            <section>
+              <h1 id="titulo-ficha2">Tostadora</h1>
+              <img src="images/prod-tostadora.jpeg" id="ficha-img-tostadora" alt="Tostadora de ejemplo, cabecera">
+              <img src="images/ico-calen.svg" id="ficha-svg-calendario" alt="Icono de calendario">
+              <span id="ficha-calendario-letras">Calendario de disponibilidad</span>
+              <span id="ficha-precio">3-5€ al día</span>
+              <span id="ficha-disponible">Disponible</span>
+            </section>
+            <section>
+              <h2 class="h2-ficha">Características principales</h2>
+              <div id="ficha-color">
+              <ul>
+                <li>Consumo: 450W</li>
+                <li>Dos ranuras.</li>
+                <li>Peso: 800g.</li>
+              </ul>
+              </div>
+            </section>
+            <section>
+              <h2 class="h2-ficha">Descripción</h2>
+              <p class="p-ficha">Sed efficitur ut magna eu hendrerit. Phasellus euismod magna non velit
+                ornare egestas. Integer vestibulum ipsum tortor, vel luctus eros imperdiet
+                vitae. In porta elementum tempor. Cras sapien urna, viverra dictum mi eget,
+                faucibus accumsan erat. Aenean pellentesque dignissim condimentum. Donec et
+                eros nunc. Nulla facilisi. Suspendisse venenatis nunc nec dolor semper, quis
+                tempus ex venenatis. Fusce scelerisque sapien id nulla scelerisque vehicula.</p>
+            </section>
+          </article>
+          <article id="duda">
+            <h2 class="h2-ficha">¿Tienes alguna duda?</h2>
+            <p class="p-ficha">Nuestro equipo está aquí para ayudarte. En menos de 48h recibirás tu respuesta
+              por email.  Si necesitas ayuda lo antes posible, llama a nuestro teléfono.</p>
+            <button class="button-contacta">Contacta</button>
+          </article>
+
+
+
+
+        </main>
+
+
+        <footer>
+          <hr>
+          <div id="a-leg">
+            <ul>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Normas de uso</a></li>
+              <li><a href="#">Centro de ayuda</a></li>
+            </ul>
+          </div>
+            <h4 id="siguenos-en">Síguenos en...</h4>
+            <ul class="rrss" id="rrss1">
+              <li><a href="#" id="rrsstw"><img src="images/rrss-twitter.svg" alt="Logotipo de Twitter"></a></li>
+              <li><a href="#" id="rrssin"><img src="images/rrss-instagram.png" alt="Logotipo de Instagram"></a></li>
+            </ul>
+            <ul class="rrss" id="rrss2">
+              <li><a href="#" id="rrssfb"><img src="images/rrss-facebook.png" alt="Logotipo de Facebook"></a></li>
+              <li><a href="#" id="rrssyt"><img src="images/rrss-yt.png" alt="Logotipo de Youtube"></a></li>
+            </ul>
+        <p id="cp"> © La Objeteca, 2022-2023</p>
+      </footer>
+      <script src="script/menu-h.js"></script>
+    </body>
+</html>

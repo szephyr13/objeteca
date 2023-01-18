@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>La Objeteca - Catálogo</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- FUENTES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Yanone+Kaffeesatz:wght@200;300&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+      <header>
+        <nav>
+          <div id="header-logo">
+            <a href="index.html"><img src="images/_logoajust.svg" id="header-logo-svg" alt="Logotipo de La Objeteca"> La Objeteca</a>
+          </div>
+          <button class="hamburguesa">
+            <img src="images/ico-menu.svg" id="header-boton-hamburguesa-svg" alt="Menú de hamburguesa">
+          </button>
+          <div class="menu">
+          <ul>
+            <li><a href="catalogo.html" class="objeto-menu" id="h-catalogo">Catálogo</a></li>
+            <li><a href="#" class="objeto-menu" id="h-acerca">Acerca de nosotros</a></li>
+            <li><a href="eco-circular.html" class="objeto-menu" id="h-ecoc">Economía circular</a></li>
+            <li><a href="#" class="objeto-menu" id="h-contacta">Contacta</a></li>
+            <li>
+              <button id="header-boton-socios">
+                <img src="images/ico-user.svg" id="header-boton-socios-svg" alt="Botón para acceder al área de socios">
+              </button>
+            </li>
+          </ul>
+          </div>
+        </nav>
+      </header>
+
+        <main id="main-catalogo">
+
+          <div id=titulo-buscador>
+            <h1>Catálogo</h1>
+            <ul>
+              <li><form action ="#" method="post" id="form-buscador"><fieldset>
+                <input type="text" class="campo-escritura" id="form-buscador-barra" name="buscador" placeholder="Buscar...">
+                <img src="images/ico-filtros.svg" id="form-boton-filtros" alt="Botón de filtros">
+                <img src="images/ico-buscar.svg" id="form-boton-buscar" alt="Botón de buscar">
+              </fieldset></form></li>
+              <li><img src="images/ico-carr.svg" id="boton-carrito" alt="Botón del carrito"></li>
+            </ul>
+          </div>
+
+
+          <aside>
+
+            <form action="#" method="post" id="filtros" class="filtrosCerrado">
+              <fieldset>
+                <legend><h2>Filtros</h2></legend>
+                <ul>
+                  <li><h3>Lugar</h3></li>
+                  <li> <input type="checkbox" name="salon" value="1"> Salón </li>
+                  <li> <input type="checkbox" name="cocina" value="2"> Cocina </li>
+                  <li> <input type="checkbox" name="dormitorio" value="3"> Dormitorio </li>
+                  <li> <input type="checkbox" name="bano" value="4"> Baño </li>
+                  <li> <input type="checkbox" name="garaje" value="5"> Garaje </li>
+                  <li> <input type="checkbox" name="exterior" value="6"> Exterior </li>
+                </ul>
+                <ul>
+                  <li><h3>Disponibilidad</h3></li>
+                  <li> <input type="checkbox" name="dahora" value="7"> Disponible ahora </li>
+                  <li> <input type="checkbox" name="dsem" value="8"> Disponible esta semana </li>
+                  <li> <input type="checkbox" name="dmes" value="9"> Disponible este mes </li>
+                  <li> <input type="checkbox" name="ndisp" value="10"> No disponible </li>
+                </ul>
+                <ul>
+                  <li><h3>Rango de precios</h3></li>
+                  <li></li>
+                  <li id="rango-precios">De <input type="text" class="campo-escritura" id="pr1" name="precio1" placeholder="0"> a <input type="text" id="pr2" class="campo-escritura" name="precio2" placeholder="50">€</li>
+                </ul>
+              </fieldset>
+            </form>
+          </aside>
+
+          <article id="fichas-cat">
+            <section id="f1"><a href="c-tostadora.html">
+              <div class="rect-izq">
+                <img src="images/prod-tostadora.jpeg" alt="Tostadora de ejemplo">
+              </div>
+              <h3>Tostadora</h3>
+              <p class="p-ligero">3-5€ al día</p></a>
+            </section>
+            <section id="f2">
+              <div class="rect-der">
+                <img src="images/prod-aspirador.jpeg" alt="Aspirador de ejemplo">
+              </div>
+              <h3>Aspirador</h3>
+              <p class="p-ligero">10-15€ al día</p>
+            </section>
+            <section id="f3">
+              <div class="rect-izq">
+                <img src="images/prod-taladro.jpeg" alt="Taladro de ejemplo">
+              </div>
+              <h3>Taladro</h3>
+              <p class="p-ligero">5-10€ al día</p>
+            </section>
+            <section id="f4">
+              <div class="rect-der">
+                <img src="images/prod-herramientas.jpeg" alt="Caja de herramientas de ejemplo">
+              </div>
+              <h3>Herramientas</h3>
+              <p class="p-ligero">1-3€ al día</p>
+            </section>
+            <section id="f5">
+              <div class="rect-izq">
+                <img src="images/prod-mesa.jpeg" alt="Mesa grande de ejemplo">
+              </div>
+              <h3>Mesa grande</h3>
+              <p class="p-ligero">5-10€ al día</p>
+            </section>
+            <section id="f6">
+              <div class="rect-der">
+                <img src="images/prod-cafetera.jpeg" alt="Cafetera de ejemplo">
+              </div>
+              <h3>Cafetera</h3>
+              <p class="p-ligero">5-10€ al día</p>
+            </section>
+            <section id="f7">
+              <div class="rect-izq">
+                <img src="images/prod-robotasp.jpeg" alt="Robot aspirador de ejemplo">
+              </div>
+              <h3>Robot aspirador</h3>
+              <p class="p-ligero">12-17€ al día</p>
+            </section>
+            <section id="f8">
+              <div class="rect-der">
+                <img src="images/prod-robotco.jpeg" alt="Robot de cocina de ejemplo">
+              </div>
+              <h3>Robot de cocina</h3>
+              <p class="p-ligero">5-17€ al día</p>
+            </section>
+          </article>
+
+
+            <ul id="paginas">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>...</li>
+              <li><a href="#">19</a></li>
+              <li><a href="#">20</a></li>
+            </ul>
+
+
+
+
+
+
+
+        </main>
+
+
+        <footer>
+          <hr>
+          <div id="a-leg">
+            <ul>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Normas de uso</a></li>
+              <li><a href="#">Centro de ayuda</a></li>
+            </ul>
+          </div>
+            <h4 id="siguenos-en">Síguenos en...</h4>
+            <ul class="rrss" id="rrss1">
+              <li><a href="#" id="rrsstw"><img src="images/rrss-twitter.svg" alt="Logotipo de Twitter"></a></li>
+              <li><a href="#" id="rrssin"><img src="images/rrss-instagram.png" alt="Logotipo de Instagram"></a></li>
+            </ul>
+            <ul class="rrss" id="rrss2">
+              <li><a href="#" id="rrssfb"><img src="images/rrss-facebook.png" alt="Logotipo de Facebook"></a></li>
+              <li><a href="#" id="rrssyt"><img src="images/rrss-yt.png" alt="Logotipo de Youtube"></a></li>
+            </ul>
+        <p id="cp"> © La Objeteca, 2022-2023</p>
+      </footer>
+      <script src="script/menu-h.js"></script>
+    </body>
+</html>
